@@ -29,7 +29,7 @@ before_install:
 
 install: true
 script:
-  - exit 1
+  - bash $TRAVIS_BUILD_DIR/throw-error.sh
 
 jobs:
   include:
