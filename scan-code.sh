@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PHPCS_PATH=$COMPOSER_HOME/vendor/squizlabs/php_codesniffer/bin/phpcs
+PHPCS_PATH=$COMPOSER_BIN_DIR/phpcs
 STANDARD_PATH=$TRAVIS_BUILD_DIR/ruleset.xml
 SCAN_PATH=test.php
 
