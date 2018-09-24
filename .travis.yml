@@ -32,7 +32,11 @@ script: true
 
 jobs:
   include:
-    - stage: "Code standard for test.php"
+    - stage: "Code standard"
       script: bash $TRAVIS_BUILD_DIR/scan-code.sh test.php
-    - stage: "Code standard for test.php"
-      script: bash $TRAVIS_BUILD_DIR/scan-code.sh test.php
+      env:
+        - NAME=test.php
+    - stage: "Code standard"
+      script: bash $TRAVIS_BUILD_DIR/scan-code.sh test_success.php
+      env:
+        - NAME=test_success.php
