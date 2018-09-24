@@ -34,3 +34,5 @@ jobs:
   include:
     - stage: "Code standard for test.php"
       script: bash $TRAVIS_BUILD_DIR/scan-code.sh test.php
+    - stage: "Code standard for test.php"
+      script: bash $TRAVIS_BUILD_DIR/scan-code.sh test.php
