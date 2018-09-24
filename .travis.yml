@@ -28,5 +28,9 @@ before_install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
 
 install: true
-script:
-  - bash $TRAVIS_BUILD_DIR/scan-code.sh
+script: true
+
+jobs:
+  include:
+    - stage: "Code standard for test.php"
+      script: bash $TRAVIS_BUILD_DIR/scan-code.sh test.php
