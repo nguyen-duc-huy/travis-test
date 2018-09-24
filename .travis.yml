@@ -20,11 +20,8 @@ cache:
   directories:
     - $HOME/.composer/cache
 
-before-install:
+before_install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
 
-install:
-  - echo 1
-
-after-install:
-  - echo 1
+install: true
+script: true
