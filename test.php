@@ -1,9 +1,15 @@
 <?php
 
+namespace HelloWorld;
+
 class Testclass
 {
-    public function helloWorld()
+    public function helloWorld($a)
     {
-        return 'hello World!';
+        if ($a) {
+            return 'asd';
+        }
+
+        return 1;
     }
 }
