@@ -29,7 +29,7 @@ before_install:
 
 install: true
 script:
-  - echo 123
+  - exit 1
 
 jobs:
   include:
