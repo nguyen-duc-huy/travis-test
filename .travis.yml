@@ -24,4 +24,5 @@ before_install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
 
 install: true
-script: true
+script:
+  - bash $TRAVIS_BUILD_DIR/scan-code.sh
