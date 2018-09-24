@@ -1,6 +1,15 @@
+sudo: required
+dist: trusty
+group: edge
+
 branches:
   only:
   - master
+
+language: php
+
+php:
+  - 7.0
 
 before-install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
