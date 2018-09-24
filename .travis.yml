@@ -1,0 +1,6 @@
+branches:
+  only:
+  - master
+
+before-install:
+  - bash $TRAVIS_BUILD_DIR/before-install.sh
