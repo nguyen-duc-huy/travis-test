@@ -11,6 +11,9 @@ language: php
 php:
   - 7.0
 
+git:
+  depth: 3
+
 cache:
   apt: true
   pip: true
