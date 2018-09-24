@@ -28,7 +28,8 @@ before_install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
 
 install: true
-script: true
+script:
+  - echo 123
 
 jobs:
   include:
