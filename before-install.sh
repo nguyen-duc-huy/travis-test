@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exit 1
+composer global require "squizlabs/php_codesniffer=*"
