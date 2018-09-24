@@ -11,5 +11,14 @@ language: php
 php:
   - 7.0
 
+cache:
+  apt: true
+  pip: true
+  directories:
+    - $HOME/.composer/cache
+
 before-install:
   - bash $TRAVIS_BUILD_DIR/before-install.sh
+
+install:
+  - echo 1
