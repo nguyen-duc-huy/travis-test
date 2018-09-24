@@ -25,3 +25,6 @@ before-install:
 
 install:
   - echo 1
+
+after-install:
+  - echo 1
